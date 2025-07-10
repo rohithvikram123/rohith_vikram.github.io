@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project Name – Rohith Vikram</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+    }
+    .video-wrapper {
+      max-width: 800px;
+      margin: 0 auto 2rem;
+    }
+    .project-header {
+      background-color: #343a40;
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    .project-section {
+      padding: 2rem 1rem;
+    }
+    .tech-list li {
+      list-style-type: none;
+      margin-bottom: 0.5rem;
+      padding-left: 1rem;
+      position: relative;
+    }
+    .tech-list li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="project-header">
+    <h1 class="display-5">Implementation Of Path Planning Algorithms</h1>
+    <p class="lead">Dijkstra, A*, RRT, RRT-A* Algorithms</p>
+  </div>
+
+  <!-- Main Content -->
+  <!-- Video Section Heading and Description -->
+
+
+<!-- Video Demos Side by Side -->
+<!-- Video Section Heading and Description -->
+<div style="text-align: center; margin-bottom: 20px;">
+    <h2>Path planning</h2>
+    <p>Implemented the Dijkstra, A*, RRT, RRT-A* Algorithms for path planning of a robot in a custom obstacle map using OpenCV.</p>
+</div>
+
+<!-- First Video Demos Row -->
+<div style="display: flex; gap: 20px; justify-content: space-between; margin-bottom: 60px;">
+    <!-- Left Video -->
+    <div style="flex: 1; text-align: center;">
+        <h5>Dijkstra Algorithm</h5>
+        <video controls class="w-100 rounded shadow-sm">
+            <source src="assets/videos/dijkstra_ouitput.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <p style="margin-top: 10px;">Implemented Dijkstra's Algorithm to find the optimal path between a start and goal point on a given map for a point robot (radius = 0; clearance = 5mm).</p>
+        <p style="margin-top: 10px;">The Output is visualized as an animation showing the exploration of nodes and the final optimal path.</p>
+        <p style="margin-top: 10px;">Action Set: {(1, 0), (-1, 0), (0, 1), (0, -1), (1, 1), (-1, 1), (1, -1), (-1, -1)}</p>
+    </div>
+
+    <!-- Right Video -->
+    <div style="flex: 1; text-align: center;">
+        <h5>A* Algorithm</h5>
+        <video controls class="w-100 rounded shadow-sm">
+            <source src="assets/videos/A_star.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <p style="margin-top: 10px;">Implementation of the A* algorithm on a Differential Drive (non-holonomic) Turtlebot3 robot.</p>
+        <p style="margin-top: 10px;">The Output is visualized as an animation showing the exploration of nodes and the final optimal path.</p>
+        <p style="margin-top: 10px;">Action Set: {(0, RPM1), (RPM1, 0), (RPM1, RPM1), (0, RPM2), (RPM2, 0), (RPM2, RPM2), (RPM1, RPM2), (RPM2, RPM1)}</p>
+    </div>
+</div>
+
+<!-- Second Video Demos Row -->
+<div style="display: flex; gap: 20px; justify-content: space-between;">
+    <!-- Left Video -->
+    <div style="flex: 1; text-align: center;">
+        <h5>RRT</h5>
+        <div class="video-wrapper">
+            <img src="assets/images/portfolio/RRT.png" alt="Maze Navigation Demo" class="w-100 rounded shadow-sm" />
+        </div>
+        <p style="margin-top: 10px;">Implemented RRT algorithm to generate a tree-based path from the start to goal on a cluttered map.</p>
+        <p style="margin-top: 10px;">The output shows how the tree expands and connects the start to the goal while avoiding obstacles.</p>
+        <p style="margin-top: 10px;">Action Set: N/A (tree-based random exploration).</p>
+    </div>
+
+    <!-- Right Video -->
+    <div style="flex: 1; text-align: center;">
+        <h5>RRT-A*</h5>
+        <div class="video-wrapper">
+            <img src="assets/images/portfolio/RRT-A.png" alt="Maze Navigation Demo" class="w-100 rounded shadow-sm" />
+        </div>
+          <p style="margin-top: 10px;">Implementation of the RRT-A* algorithm combining the rapid exploration of RRT with the heuristic optimization of A*.</p>
+          <p style="margin-top: 10px;">The output is visualized as an animation showing the tree expansion toward the goal with optimal path refinement using A* heuristics.</p>
+          <p style="margin-top: 10px;">Action Set: Adaptive and dynamically generated based on sampled configurations and A* cost heuristics.</p>
+
+    </div>
+</div>
+
+
+    
+    
+
+    <!-- Key Features
+    <div>
+      <h3>Key Features</h3>
+      <ul class="tech-list">
+        <li>Live patient data visualization</li>
+        <li>Dark mode toggle for night shifts</li>
+        <li>Mobile-first responsive design</li>
+        <li>Clean, minimalist UI for focus</li>
+      </ul>
+    </div> -->
+
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

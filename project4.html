@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project Name – Rohith Vikram</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+    }
+    .video-wrapper {
+      max-width: 800px;
+      margin: 0 auto 2rem;
+    }
+    .project-header {
+      background-color: #343a40;
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    .project-section {
+      padding: 2rem 1rem;
+    }
+    .tech-list li {
+      list-style-type: none;
+      margin-bottom: 0.5rem;
+      padding-left: 1rem;
+      position: relative;
+    }
+    .tech-list li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="project-header">
+    <h1 class="display-5">Mobile Base UR3 Manipulator Robot</h1>
+    <p class="lead">Modeling, Forward Kinematics, and Inverse Kinematics Analysis</p>
+  </div>
+
+  <!-- Main Content -->
+  <!-- First Video Demos Row -->
+<div style="display: flex; gap: 20px; justify-content: space-between; margin-bottom: 60px;">
+    <!-- Left Video -->
+    <div style="flex: 1; text-align: center;">
+       
+        <video controls class="w-100 rounded shadow-sm" style="margin: 10px;">
+            <source src="assets/videos/inverse_ur3.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        
+    </div>
+
+    <!-- Right Video -->
+    <div style="flex: 1; text-align: center;">
+        <img src="assets/images/portfolio/circular_trajectory.png" alt="Maze Navigation Demo" style="max-width: 60%; height: auto;" class="w-100 rounded shadow-sm" />
+    </div>
+</div>
+
+    <!-- Project Description
+    <div class="mb-5">
+      <h3>Project Overview</h3>
+      <p>
+        This project is a simulation of a TurtleBot that leverages RGB and logical cameras for detecting ArUco markers and identifying floating parts within a maze environment. The detected markers guide robot navigation, while logical camera inputs enable part localization and pose estimation for effective interaction within the maze.
+      </p>
+    </div> -->
+
+
+    <div class="mb-5" style="margin: 10px;">
+      <h3>Project Overview</h3>
+      <p>
+         Designed a mobile base robot with a UR3 manipulator. Validated forward kinematics using the Matlab Peter Corke toolbox and inverse kinematics through Jacobian matrix. Executed pick-and-place tasks utilizing the ROS2 framework within the Gazebo and Rviz environments.
+      </p>
+    </div>
+
+    <div class="mb-5" style="margin: 10px;">
+        <h2>Features</h2>
+        <ul>
+            <li>Custom mobile base integrated with a UR3 robotic arm</li>
+            <li>Forward kinematics validated using MATLAB Peter Corke's Robotics Toolbox</li>
+            <li>Inverse kinematics computed using the Jacobian matrix</li>
+            <li>Visualization and debugging in RViz</li>
+            <li>ROS 2 integration for control and communication</li>
+        </ul>
+
+        <h2>Tools & Frameworks</h2>
+        <ul>
+            <li>Ros2</li>
+            <li>Gazebo</li>
+            <li>RViz</li>
+            <li>MATLAB with Peter's Corke's Robotics Toolbox</li>
+            <li>Python (ROS nodes)</li>
+            <li>URDF/Xacro for robot modeling</li>
+        </ul>
+    </div>
+    <div class="mb-5" style="margin: 10px;">
+        <h2>How It Works</h2>
+            <ul>
+            <li>
+                <strong>Robot Model:</strong> The robot consists of a differential-drive mobile base and a UR3 manipulator mounted on top. All joints and links are defined in a URDF/Xacro file.
+            </li>
+            <li>
+                <strong>Kinematics:</strong>
+                <ul>
+                <li>Forward kinematics were tested in MATLAB using Peter Corke’s toolbox.</li>
+                <li>Inverse kinematics were solved analytically and numerically using the Jacobian matrix.</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Simulation:</strong> The robot was launched in Gazebo, where it navigates to a target, manipulates objects, and visualizes tasks in RViz.
+            </li>
+            <li>
+                <strong>Task Execution:</strong> ROS 2 nodes handle motion control, inverse kinematics solving, and object manipulation.
+            </li>
+            </ul>
+    </div>
+
+
+    <!-- Tech Stack -->
+    
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
